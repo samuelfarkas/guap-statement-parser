@@ -1,0 +1,81 @@
+{
+  "inputHeaders": [
+    "Date started (UTC)",
+    "Date completed (UTC)",
+    "ID",
+    "Type",
+    "State",
+    "Description",
+    "Reference",
+    "Payer",
+    "Card number",
+    "Card label",
+    "Card state",
+    "Orig currency",
+    "Orig amount",
+    "Payment currency",
+    "Amount",
+    "Total amount",
+    "Exchange rate",
+    "Fee",
+    "Fee currency",
+    "Balance",
+    "Account",
+    "Beneficiary account number",
+    "Beneficiary sort code or routing number",
+    "Beneficiary IBAN",
+    "Beneficiary BIC",
+    "MCC",
+    "Related transaction id",
+    "Spend program"
+  ],
+  "outputHeaders": [
+    "Date",
+    "ID",
+    "Type",
+    "Amount",
+    "Currency",
+    "Account",
+    "Applicable expense percentage",
+    "Description",
+    "Category",
+    "Payment Method",
+    "Invoice / Receipt",
+    "Message"
+  ],
+  "mapping": {
+    "ID": "ID",
+    "Date": "Date completed (UTC)",
+    "Amount": "Orig amount",
+    "Currency": "Orig currency",
+    "Message": "Description",
+    "Type": "Type",
+    "Payment Method": "Type"
+  },
+  "transactionTypeMapping": {
+    "TOPUP": "Income",
+    "EXCHANGE": "Currency Exchange",
+    "FEE": "Fee",
+    "CARD_PAYMENT": "Expense",
+    "TRANSFER": "Expense"
+  },
+  "paymentMethodMapping": {
+    "TOPUP": "Transfer",
+    "EXCHANGE": "Transfer",
+    "FEE": "Transfer",
+    "CARD_PAYMENT": "Card",
+    "TRANSFER": "Tranfer"
+  },
+  "accountInfoMapping": {
+    "AccountName": "Account"
+  },
+  "processingTypesMapping": {
+    "Type": "Type",
+    "Payment Method": "Payment Method",
+    "Amount": "Amount",
+    "Date": "Date"
+  },
+  "skipRows": 0,
+  "dateFormat": "2006-01-02",
+  "delimiter": ","
+}

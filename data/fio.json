@@ -1,0 +1,78 @@
+{
+  "inputHeaders": [
+    "ID operácie",
+    "Dátum",
+    "Objem",
+    "Mena",
+    "Protiúčet",
+    "Názov protiúčtu",
+    "Kód banky",
+    "Názov banky",
+    "KS",
+    "VS",
+    "SS",
+    "Poznámka",
+    "Správa pre príjemcu",
+    "Typ",
+    "Vykonal",
+    "Upresnenie",
+    "Poznámka",
+    "BIC",
+    "ID pokynu"
+  ],
+  "outputHeaders": [
+    "Date",
+    "ID",
+    "Type",
+    "Amount",
+    "Currency",
+    "Account",
+    "Applicable expense percentage",
+    "Description",
+    "Category",
+    "Payment Method",
+    "Invoice / Receipt",
+    "Message"
+  ],
+  "mapping": {
+    "ID": "ID operácie",
+    "Date": "Dátum",
+    "Amount": "Objem",
+    "Currency": "Mena",
+    "Message": "Správa pre príjemcu",
+    "Type": "Typ",
+    "Payment Method": "Typ"
+  },
+  "transactionTypeMapping": {
+    "Bezhotovostný príjem": "Income",
+    "Bezhotovostná platba": "Expense",
+    "Poplatok": "Fee",
+    "Transakcia kartou": "Expense",
+    "Okamžitá odchádzajúca platba": "Expense",
+    "Platba prevodom v rámci banky": "Expense",
+    "Okamžitá odchádzajúca Europlatba": "Expense",
+    "Okamžitá prichádzajúca Europlatba": "Income"
+  },
+  "paymentMethodMapping": {
+    "Bezhotovostný príjem": "Transfer",
+    "Bezhotovostná platba": "Transfer",
+    "Poplatok": "Transfer",
+    "Transakcia kartou": "Card",
+    "Okamžitá odchádzajúca platba": "Transfer",
+    "Platba prevodom v rámci banky": "Transfer",
+    "Okamžitá odchádzajúca Europlatba": "Transfer",
+    "Okamžitá prichádzajúca Europlatba": "Transfer"
+  },
+  "accountInfoMapping": {
+    "AccountName": "Account"
+  },
+  "processingTypesMapping": {
+    "Type": "Type",
+    "Payment Method": "Payment Method",
+    "Amount": "Amount",
+    "Date": "Date"
+  },
+  "skipRows": 11,
+  "dateFormat": "02.01.2006",
+  "delimiter": ";"
+}
