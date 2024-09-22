@@ -32,7 +32,8 @@
     "Category",
     "Payment Method",
     "Invoice / Receipt",
-    "Message"
+    "Message",
+    "Reviewed
   ],
   "mapping": {
     "ID": "ID operácie",

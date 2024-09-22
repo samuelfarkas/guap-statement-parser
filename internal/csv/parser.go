@@ -56,7 +56,7 @@ func ParseStatement(path string, config *config.GuapCSVMappingConfig) ([][]strin
         records = append(records, record)
     }
 
-    data := records[1:]
+    data := records
     outputCSV := [][]string{config.OutputHeaders}
 
     headerIndexMap := make(map[string]int)

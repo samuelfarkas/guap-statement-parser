@@ -41,13 +41,14 @@
     "Category",
     "Payment Method",
     "Invoice / Receipt",
-    "Message"
+    "Message",
+    "Reviewed"
   ],
   "mapping": {
     "ID": "ID",
     "Date": "Date completed (UTC)",
-    "Amount": "Orig amount",
-    "Currency": "Orig currency",
+    "Amount": "Total amount",
+    "Currency": "Payment currency",
     "Message": "Description",
     "Type": "Type",
     "Payment Method": "Type"
@@ -64,7 +65,7 @@
     "EXCHANGE": "Transfer",
     "FEE": "Transfer",
     "CARD_PAYMENT": "Card",
-    "TRANSFER": "Tranfer"
+    "TRANSFER": "Transfer"
   },
   "accountInfoMapping": {
     "AccountName": "Account"
