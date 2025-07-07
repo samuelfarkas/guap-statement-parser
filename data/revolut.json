@@ -31,17 +31,18 @@
   ],
   "outputHeaders": [
     "Date",
-    "ID",
     "Type",
     "Amount",
     "Currency",
     "Account",
     "Applicable expense percentage",
     "Description",
-    "Category",
-    "Payment Method",
     "Invoice / Receipt",
     "Message",
+    "Category",
+    "Doklado Link",
+    "Payment Method",
+    "ID",
     "Reviewed"
   ],
   "mapping": {
